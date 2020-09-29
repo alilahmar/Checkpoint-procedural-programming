@@ -1,0 +1,51 @@
+PROCEDURE Dot_Product(V1,V2: ARRAY_OF INTEGER(n))
+VAR
+    n: INTEGER;
+    PS: INTEGER:= 0;
+    i: INTEGER;
+BEGIN
+    FOR i FROM 0 TO n-1 STEP 1 DO 
+    PS:= PS + (V1[i] * V2[i]) 
+    END_FOR
+END
+ALGORITHM Procedural_Programming
+VAR
+    n: INTEGER;
+    i,j: INTEGER;
+    tab: ARRAY_OF INTEGER;
+BEGIN
+    for i FROM 0 TO n-1 STEP 1 DO 
+    for j FROM i+1 TO n STEP 1 DO 
+    IF (Dot_Product(V[i],V[j]) = 0) THEN
+    WRITE("two vectors are orthogonal")
+    ELSE ("two vectors are not orthogonal")
+    END_FOR
+    END_FOR
+END
+
+
+FUNCTION Dot_Product(V1, V2) : INTEGER
+VAR
+    n: INTEGER;
+    PS: INTEGER:= 0;
+    i: INTEGER;
+BEGIN
+   for i FROM 0 TO n-1 STEP 1 DO
+    RETURN (PS:= PS + (V1[i] * V2[j])) ;
+    END_FOR
+END
+
+ALGORITHM Procedural_Programming
+VAR
+    n: INTEGER;
+    i,j: INTEGER;
+    tab: ARRAY_OF INTEGER;
+BEGIN
+    for i FROM 0 TO n-1 STEP 1 DO 
+    for j FROM i+1 TO n STEP 1 DO 
+    IF (Dot_Product(V[i],V[j]) = 0 )THEN
+    WRITE("two vectors are orthogonal")
+    ELSE ("two vectors are not orthogonal")
+    END_FOR
+    END_FOR
+END
